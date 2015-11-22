@@ -17,6 +17,8 @@ namespace Hello{
 }
 
 int main(){
+    std::ios::sync_with_stdio();
+    std::cin.tie(0);
 	Hello::hello hellodefault;
 	hellodefault.Print();
 	Hello::hello test("ファンタジスタドール");
