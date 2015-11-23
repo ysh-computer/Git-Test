@@ -1,22 +1,29 @@
 #include <iostream>
 #include <string>
 
-namespace Hello{
-	class hello{
+namespace Hello
+{
+	class hello
+    {
 	private:
 		std::string str;
 	public:
 		hello() : str("Hello"){}
 
-		hello(std::string str){this->str = str;}
+		hello(std::string str)
+        {
+            this->str = str;
+        }
 
-		void Print(){
+		void Print()
+        {
 			std::cout << str << "\n";
 		}
 	};
 }
 
-int main(){
+int main()
+{
     std::ios::sync_with_stdio();
     std::cin.tie(0);
 	Hello::hello hellodefault;
