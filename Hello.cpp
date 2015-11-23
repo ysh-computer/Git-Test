@@ -19,6 +19,10 @@ namespace Hello
         {
 			std::cout << str << "\n";
 		}
+        void Add(std::string str2)
+        {
+            str.append(str2);
+        }
 	};
 }
 
@@ -30,5 +34,7 @@ int main()
 	hellodefault.Print();
 	Hello::hello test("ファンタジスタドール");
 	test.Print();
+    test.Add("に文字列を付け加える");
+    test.Print();
 	return 0;
 }
